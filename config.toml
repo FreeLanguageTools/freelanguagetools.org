@@ -1,0 +1,4 @@
+baseURL = "https://freelanguagetools.org/"
+languageCode = "en-us"
+title = "FreeLanguageTools Blog"
+theme = "fuji"

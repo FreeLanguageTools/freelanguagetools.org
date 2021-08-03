@@ -120,16 +120,17 @@ Only 64 bit Windows 7+ is supported. On Windows you need the
 [Microsoft Visual C++ Redistributable Package](https://aka.ms/vs/16/release/vc_redist.x64.exe),
 which you may or may not already have.
 
-On macOS you must have Anki open on the foreground, or otherwise 
-[disable the App Nap feature](https://github.com/FooSoft/anki-connect#notes-for-macos-users).
-Otherwise, AnkiConnect will not respond and will cause this program to be very
-slow and/or unresponsive.
-
-### Anki (Required for card creation)
-Download and install Anki. Skip if you already installed it.
+### Anki Add-on (Required for card creation)
+Download and install [Anki dekstop](https://apps.ankiweb.net/) (Not mobile or Anki Universal). Skip if you already installed it.
 
 Then, install the [AnkiConnect](https://ankiweb.net/shared/info/2055492159)
 addon. You do not have to change any settings for it.
+
+**Mac users**: You must have Anki open on the foreground (i.e. visible on your
+desktop), or otherwise 
+[disable the App Nap feature](https://github.com/FooSoft/anki-connect#notes-for-macos-users).
+If you do not do this, AnkiConnect will not respond and will cause this
+program to be very slow and/or unresponsive.
 
 ### Browser (Optional but highly recommended)
 Install extension for your browser:
@@ -189,8 +190,9 @@ Currently ssmtool does not support directly adding audio during card creation.
 However you can easily get the audio during review with 
 [AwesomeTTS Anki addon](https://ankiweb.net/shared/info/814349176).
 After [configuring](https://github.com/AwesomeTTS/awesometts-anki-addon/wiki/Advanced)
-it, you can go to Tools > Manage Note Types > (select your note type) > Cards > Add TTS
-You can select the Sentence field, the Word field, or both. Refold recommends
+it, you can go to 
+`Tools > Manage Note Types > (select your note type) > Cards > Add TTS`
+Then, select the Sentence field, the Word field, or both. Refold recommends
 putting audio on the back of the card, but it is also possible to put it on
 the front side.
 
@@ -198,5 +200,7 @@ the front side.
 You are welcome to report bugs, suggest features/enhancements, or ask for
 clarifications by 
 [opening a GitHub issue](https://github.com/FreeLanguageTools/ssmtool/issues/new).
+
+We have an official chatroom on [Matrix](https://matrix.to/#/#flt:matrix.org)
 
 You are also welcome ask _z#6358 on Refold Discord for help.

@@ -94,14 +94,10 @@ websites, further smoothening the immersion experience.
   dictionary is chosen
 
 ## Installation
-### Anki
-Download and install Anki. Skip if you already installed it.
+There are three components you need to install to make this program work.
 
-Then, install the [AnkiConnect](https://ankiweb.net/shared/info/2055492159)
-addon. You do not have to change any settings for it.
-
-## Desktop Application
-### GNU/Linux
+### Main Desktop Application
+#### GNU/Linux
 If you are using Gentoo, you can emerge the package `app-misc/ssmtool` from
 `guru` overlay.
 
@@ -111,7 +107,7 @@ On Linux the appearance of the app depends on the system Qt theme.
 
 Packaged versions for Arch Linux will be created in the near future.
 
-### Windows and macOS
+#### Windows and macOS
 Even though we encourage the use of free software, nonfree operating systems
 are still supported by this tool. You can go to the 
 [Github Releases](https://github.com/FreeLanguageTools/ssmtool/releases) 
@@ -128,6 +124,12 @@ On macOS you must have Anki open on the foreground, or otherwise
 [disable the App Nap feature](https://github.com/FooSoft/anki-connect#notes-for-macos-users).
 Otherwise, AnkiConnect will not respond and will cause this program to be very
 slow and/or unresponsive.
+
+### Anki (Required for card creation)
+Download and install Anki. Skip if you already installed it.
+
+Then, install the [AnkiConnect](https://ankiweb.net/shared/info/2055492159)
+addon. You do not have to change any settings for it.
 
 ### Browser (Optional but highly recommended)
 Install extension for your browser:

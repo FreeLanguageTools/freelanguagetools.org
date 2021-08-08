@@ -2,3 +2,14 @@ baseURL = "https://freelanguagetools.org/"
 languageCode = "en-us"
 title = "FreeLanguageTools Blog"
 theme = "fuji"
+[params]
+Subtitle = "Building free software for language learning"
+SourceURL = "https://github.com/FreeLanguageTools/freelanguagetools.org"
+showLicenseInFooter = true
+license = "CC BY-SA 4.0"
+licenseLink = "https://creativecommons.org/licenses/by-sa/4.0/"
+
+[permalinks]
+posts = '/:year/:month/:title/'
+
+

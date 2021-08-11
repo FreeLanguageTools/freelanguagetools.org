@@ -2,10 +2,13 @@
 title: "Announcing ssmtool local API"
 date: 2021-08-08T17:34:53+08:00
 draft: false
+tags: ['api', 'ssmtool']
 ---
 A basic but fully functional API has been added in `ssmtool` version 0.3. The
 goal of this is to enable extensions for other programs, such as ebook readers
 or video players, to depend on ssmtool's infrastructure and configuration. 
+
+<!--more-->
 
 For developers, this can greatly reduce the workload since there is no longer
 a need to program dictionary processing or lemmatization functions. For users,
@@ -23,12 +26,12 @@ Here is a table for the current API endpoints for reference.
 -------|-------|--------
 GET | `/healthcheck` | Check if API is online
 GET | `/version`| Get the version of API running. The current version is 1, which is the only possible value now.
-GET | `/define/<word>` | Get the definition of a word. The response is a [definition item](#definition). Lemmatization depends on user setting.
+GET | `/define/<word>` | Get the definition of a word. The response is a [definition item](#definition-item). Lemmatization depends on user setting.
 GET | `/define/<word>?lemmatize=false` | Get the definition of a word regardless of user settings without lemmatization.
 GET | `/lemmatize` | Get the lemmatized form of a word. Response is a simple string.
 GET | `/logs` | Get the full database containing all past lookups and note creations
 GET | `/stats` | Get data about lookups and new cards today
-POST | `/createNote` | The request body should be a [note item](#note).
+POST | `/createNote` | The request body should be a [note item](#note-item).
 
 ## Data formats
 ### Definition item

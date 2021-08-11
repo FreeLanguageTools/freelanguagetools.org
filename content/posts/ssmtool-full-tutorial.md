@@ -2,6 +2,7 @@
 title: "Simple Sentence Mining (ssmtool) Full Tutorial"
 date: 2021-07-30T13:23:10+08:00
 draft: false
+tags: ['ssmtool', 'tutorial']
 ---
 ## Introduction
 Simple Sentence Mining (ssmtool) is a universal, cross-platform, multilingual,
@@ -10,6 +11,8 @@ source. It is free software under the
 [GNU GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html) license, meaning you
 are free to use, modify, and distribute it, even commerically, as long as it
 remains under the same license.
+
+<!--more-->
 
 It is designed to be simple to set up and straightforward, with the ultimate
 goal of enabling smooth sentence mining during immersion study. Originally, I

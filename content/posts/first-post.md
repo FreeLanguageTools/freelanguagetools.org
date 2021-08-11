@@ -2,15 +2,14 @@
 title: "Hello World"
 date: 2021-07-28T13:06:49+08:00
 draft: false
+tags: ["meta"]
 ---
-Hello, this is the beginning of the FreeLanguageTools.org website. On this website
-I will be writing about the tools for learning languages without sacrificing
-your freedom (such as by using proprietary apps)
-
 A while ago, I came across [Refold](https://refold.la), which was by far the
 clearest and most promising path to fluency I had seen, and matches up well
 with my experience of learning English. I decided to use it for learning
 Russian partly as an experiment.
+
+<!--more-->
 
 As I attempted to immerse in content, I wanted a way to easily create
 flashcards from sentences I encounter in the wild. However, everything I found

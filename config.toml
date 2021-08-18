@@ -14,5 +14,8 @@ posts = '/:year/:month/:title/'
 
 [menu]
 [[menu.link]]
-name = "Join our Matrix chatroom"
-URL = "https://matrix.to/#/#flt:matrix.org"
+name = "Join us on Matrix"
+URL = "https://matrix.to/#/#flt:midov.pl"
+[[menu.link]]
+name = "Latest release of ssmtool"
+URL = "https://github.com/FreeLanguageTools/ssmtool/releases"

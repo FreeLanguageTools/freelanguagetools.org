@@ -38,7 +38,7 @@ https://sites.google.com/site/gtonguedict/home/stardict-dictionaries
 
 **Converted Apple Dictionaries, 41 dictionaries, some bilingual (Torrent)**
 
-https://anonfiles.com/r9b8p3B7uf/Converted_Apple_Dictionaries_torrent
+https://rutracker.org/forum/viewtopic.php?t=6093047
 
 **Wiktionary for eBook Readers, also available in StarDict**
 
@@ -51,7 +51,7 @@ https://mega.nz/folder/eyYwyIgY#3q4XQ3BhdvkFg9KsPe5avw/folder/bz4ywa5A
 
 **Converted Apple Dictionaries, 41 dictionaries, some bilingual (Torrent)**
 
-https://anonfiles.com/r9b8p3B7uf/Converted_Apple_Dictionaries_torrent
+https://rutracker.org/forum/viewtopic.php?t=6093047
 
 ## Other formats
 These *will not* work with ssmtool, but you can use them in other programs,

@@ -1,14 +1,17 @@
 ---
 title: "Anki Decks from Tatoeba Sentences"
 date: 2021-09-09T17:20:26-04:00
-draft: true
+draft: false
 tags: ['anki', 'tatoeba', 'resource', 'russian', 'programming']
 ---
 This blog post is a tutorial on creating a CSV file to import into Anki using
 Tatoeba sentences, a frequency list, and pre-downloaded Wiktionary entries.
-You can find the frequency dictionary file (freqdict.csv) [here](/freqdict.csv).
-You can download the Tatoeba sentences straight from 
+
+You can find the frequency dictionary file (freqdict.csv) [here](/freqdict.csv)
+and the Tatoeba sentences directly from 
 [their website](https://tatoeba.org/en/downloads).
+
+<!--more-->
 
 Even though this tutorial is specifically aimed at Russian, you can easily
 adapt it to any other language with sufficient Tatoeba sentences, or any

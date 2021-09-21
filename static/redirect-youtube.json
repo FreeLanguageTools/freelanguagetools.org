@@ -1,0 +1,23 @@
+{
+    "createdBy": "Redirector v3.5.3",
+    "createdAt": "2021-09-20T20:01:04.905Z",
+    "redirects": [
+        {
+            "description": "Replace youtube with piped",
+            "exampleUrl": "https://www.youtube.com/watch?v=-kUommCnV88",
+            "exampleResult": "https://piped.jae.fi/watch?v=-kUommCnV88",
+            "error": null,
+            "includePattern": "https://www.youtube.com/*",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "https://piped.jae.fi/$1",
+            "patternType": "W",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame"
+            ]
+        }
+    ]
+}

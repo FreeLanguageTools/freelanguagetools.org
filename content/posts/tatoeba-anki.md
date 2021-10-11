@@ -1,5 +1,5 @@
 ---
-title: "Anki Decks from Tatoeba Sentences"
+title: "Anki decks from Tatoeba sentences"
 date: 2021-09-09T17:20:26-04:00
 draft: false
 tags: ['anki', 'tatoeba', 'resource', 'russian', 'programming']

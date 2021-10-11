@@ -1,0 +1,128 @@
+<html>
+    <head>
+        <script src="/apps/jquery-3.6.0.min.js"></script>
+        <link rel="stylesheet" href="/apps/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
+        <style>
+            html {
+                padding: 0px 15px ;
+            }
+            textArea#text {
+                width: 100%;
+                height: 10%;
+            }
+            div#reader {
+                margin: 0% 5%;
+                width: 90%;
+                font-family: "Serif";
+                font-size: 14pt;
+            }
+        </style>
+        <script>
+            function fallbackCopyTextToClipboard(text) {
+            var textArea = document.createElement("textarea");
+            textArea.value = text;
+            
+            // Avoid scrolling to bottom
+            textArea.style.top = "0";
+            textArea.style.left = "0";
+            textArea.style.position = "fixed";
+
+            document.body.appendChild(textArea);
+            textArea.focus();
+            textArea.select();
+
+            try {
+                var successful = document.execCommand('copy');
+                var msg = successful ? 'successful' : 'unsuccessful';
+                console.log('Fallback: Copying text command was ' + msg);
+            } catch (err) {
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+
+            document.body.removeChild(textArea);
+            }
+            function copyTextToClipboard(text) {
+            if (!navigator.clipboard) {
+                fallbackCopyTextToClipboard(text);
+                return;
+            }
+            navigator.clipboard.writeText(text).then(function() {
+                console.log('Async: Copying to clipboard was successful!');
+            }, function(err) {
+                console.error('Async: Could not copy text: ', err);
+            });
+            }
+        </script>
+    </head>
+    <body>
+        <h1>SSM Web Reader</h1>
+        <a href="https://freelanguagetools.org">Homepage</a>
+        <div id="form">
+        <ol>
+          <li>Turn off the browser extension</li>
+          <li>Convert any epub to plaintext: something like <a
+          href="https://www.zamzar.com/convert/epub-to-txt/">this</a></li>
+          <li>Paste the content to the textbox</li>
+          <li>Click on "Read"</li>
+          <li>Reload the page if you made a mistake or want to read more.</li>
+        </ol>
+            <form class="pure-form">
+                <br>
+                <textarea id="text" class="smooth" cols="120" rows="30"></textarea>
+                <br>
+                <button id="submit" class="pure-button pure-button-primary">Read</button>
+            </form>
+    </div>  
+        <div id="reader">
+        <script>
+            $('#submit').click(( event ) => {
+                event.preventDefault()
+                text = $('#text').val()
+                text = text.split("\n")
+                text_p = "<p>" + text.join("</p><p>") + "</p>"
+                console.log(text_p)
+                $('#reader').append(text_p)
+
+                $('p').each(function() {
+                    $(this).html($(this).text()
+                    .split(/(?<=[\.\?!] )/)
+                    .map(v => {return ' <span class="sentence">'+v.trimRight()+'</span> '}));
+                });
+
+                $('span.sentence').click(obj => {
+                    let selection = window.getSelection();
+                    selection.modify('extend','backward','word');        
+                    let a = selection.toString();
+                        
+                    selection.modify('extend','forward','word');
+                    while (selection.toString().slice(-1) == "-") {
+                        selection.modify('extend','forward','word');
+                    }
+                    let b = selection.toString();
+
+                    selection.modify('move','forward','character');
+                    word = (a + b).replace(/[.,\/#!$%\^&\*;:{}=\_…`~()]/g, "");
+                    console.log(word);
+                    console.log(obj)
+                    copyobj = {
+                    "sentence": obj.target.textContent.trim(),
+                    "word": word.trim()
+                    };
+                    console.log(copyobj)
+                    copyTextToClipboard(JSON.stringify(copyobj));
+                });
+
+                $("span.sentence").hover(function(){
+                    $(this).css("text-decoration", "underline #6b7 solid 3px");
+                    $(this).css("text-decoration-skip-ink", "none");
+                },
+                function(){
+                    $(this).css("text-decoration", "");
+                });
+                $("#form").hide()
+            })
+        </script>
+        <noscript>Javascript is required for this application.</noscript>
+        </div>
+    </body>
+</html>

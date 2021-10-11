@@ -1,5 +1,5 @@
 ---
-title: "Simple Sentence Mining (ssmtool) Full Tutorial"
+title: "Simple Sentence Mining (ssmtool) full tutorial"
 date: 2021-07-30T13:23:10+08:00
 draft: false
 tags: ['ssmtool', 'tutorial']

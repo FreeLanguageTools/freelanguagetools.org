@@ -1,5 +1,5 @@
 ---
-title: "Using SSM with mpvacious to mine sentences from videos"
+title: "Using SSM with mpvacious to mine videos"
 date: 2021-09-21T18:21:04-04:00
 tags: ['tutorial', 'ssmtool', 'anki']
 draft: false

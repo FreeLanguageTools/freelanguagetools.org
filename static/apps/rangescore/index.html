@@ -1,7 +1,7 @@
 <html>
     <head>
-        <script src="/apps/jquery-3.6.0.min.js"></script>
-        <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
+        <script src="jquery-3.6.0.min.js"></script>
+        <link rel="stylesheet" href="/apps/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
         <style>
             html {
                 padding: 0px 15px ;
@@ -52,8 +52,8 @@
         </script>
     </head>
     <body>
-        <a href="https://freelanguagetools.org">Homepage</a>
         <h1>Text vocabulary analysis</h1>
+        <a href="https://freelanguagetools.org">Homepage</a>
         <div class="pure-g">
             <div class="pure-u-2-3">
             <form class="pure-form">
@@ -86,7 +86,7 @@
                         dataType: "json",
                         complete: function(returnData) {
                             console.log(returnData.responseJSON)
-                            $('#result').text("Finished")
+                            $('#result').text("Results")
                             buildHtmlTable(returnData.responseJSON['data'], "#coverage")
                         }
                     })}

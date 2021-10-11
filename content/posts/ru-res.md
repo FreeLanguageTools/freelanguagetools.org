@@ -17,12 +17,10 @@ Name | URL | File Type | Note
 The New Penguin Russian Course | [libgen](http://library.lol/main/706B984105FD0B0B3831411EE7B40741) | PDF | This book covers pretty much all basic grammar concepts you'll need. Do note that it's somewhat dated and some descriptions may no longer be accurate (One thing being the postal address system, which is no longer used)
 
 ## Anki decks
-[10000 Targeted Russian Sentences with Definitions](https://ankiweb.net/shared/info/480545875)
+[ru15k v2.0 - Targeted Sentence Cards for 15000 Russian words](https://ankiweb.net/shared/info/563580199)
 
-I recommend it because I made it myself (I might detail the process in a later
-post). Note that the sentences come from Tatoeba, which is not a highly
-reliable source. Moreover, the processing is not perfect. If you find a card
-weird or too difficult, feel free to delete or suspend.
+I made this deck myself, because I could not find any satisfactory ones. The
+2.0 version has much fewer errors and significantly better coverage.
 
 ## Books
 Simply search the title of the book online and add скачать ("download") or
@@ -54,6 +52,7 @@ SoL: Slice of Life
 |Слуга народа                               |Political|2       |11.2 |Good     |above|Google Drive (There are no embedded ones)
 |Назад в СССР                               |SoL      |1       |3.5  |Good     |[YT](https://www.youtube.com/playlist?list=PLceVDopd9bIYL0mHxQAMkw1oyr3dNKlKm)                         |Embedded 
 |Лучше, чем люди                            |Scifi    |1       |13.3 |Desynced but good once retimed|[NF](https://www.netflix.com/title/81026915)  [RT](https://rutracker.org/forum/viewtopic.php?t=5648798)|Google Drive
+|Эпидемия                                   |Thriller |1       |6.4 |Good|[NF](https://www.netflix.com/title/81302258) [RT](https://rutracker.org/forum/viewtopic.php?t=5952163)|Embedded
 |Анна-детективъ                             |Mystery  |1       |44.8 |Good     |[YT](https://www.youtube.com/watch?v=sM8v-CxScJE&list=PLgkvUXEdQmce5kyk4AYs4dO-PnyqX323E&index=1)      |Embedded
 
 

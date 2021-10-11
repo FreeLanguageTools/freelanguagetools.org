@@ -14,8 +14,17 @@ posts = '/:year/:month/:title/'
 
 [menu]
 [[menu.link]]
-name = "Join our Matrix chatroom"
+name = "Talk to us on Matrix"
 URL = "https://webchat.kde.org/#/room/#flt:midov.pl"
 [[menu.link]]
-name = "Latest release of ssmtool"
+name = "Talk to us on Telegram"
+URL = "https://t.me/fltchat"
+[[menu.link]]
+name = "Latest release of SSM"
 URL = "https://github.com/FreeLanguageTools/ssmtool/releases"
+[[menu.link]]
+name = "Web reader for SSM"
+URL = "/apps/reader"
+[[menu.link]]
+name = "Text vocabulary analyzer"
+URL = "/apps/rangescore"
